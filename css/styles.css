@@ -667,6 +667,37 @@ footer {
     letter-spacing: 0.06em;
     color: #212121;
 }
+
+.projects-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+
+    cursor: pointer;
+    transition: transform 250ms linear;
+    transform: translateY(100%);
+}
+
+.projects-card:hover .overlay,
+.projects-card:focus .overlay {
+    transform: translateY(0%);
+}
 /* ------ END PROJECTS ------*/
 
 /* ------ BACKDROP ------*/
