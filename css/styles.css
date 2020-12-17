@@ -69,6 +69,8 @@ img {
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: #212121;
+
+    transition: color 250ms linear;
 }
 
 .current {
@@ -512,8 +514,21 @@ footer {
     width: 206px;
 }
 
+.footer-link-slogan {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+
 .address-text {
-    margin-bottom: 9px;
+    margin-bottom: 20px;
+    padding-top: 9px;
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
@@ -541,7 +556,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 
@@ -690,7 +705,7 @@ footer {
     color: #FFFFFF;
 
     cursor: pointer;
-    transition: transform 250ms linear;
+    transition: all 250ms linear;
     transform: translateY(100%);
 }
 
