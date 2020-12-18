@@ -439,39 +439,33 @@ img {
     display: inline-flex;
 }
 
-.clients-item {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
-    border-color: #AFB1B8;
-
-    transition: border-color 250ms linear;
-}
-
 .clients-icon {
     display: flex;
     width: 170px;
     height: 90px;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #AFB1B8;
 
-    transition: fill 250ms linear;
+    transition: all 250ms linear;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-icon:hover,
+.clients-icon:focus {
     border-color: var(--accent-color);
 }
 
 .clients-icon:hover .logo,
 .clients-icon:focus .logo {
     fill: var(--accent-color);
+    transition: fill 250ms linear;
 }
 
 .clients-icon_logo {
     fill:#AFB1B8;
-
-    transition: fill 250ms linear;
 }
 
 .clients-item:not(:last-child) {
