@@ -458,14 +458,14 @@ img {
     border-color: var(--accent-color);
 }
 
-.clients-icon:hover .logo,
-.clients-icon:focus .logo {
+.clients-icon:hover .clients-icon_logo,
+.clients-icon:focus .clients-icon_logo {
     fill: var(--accent-color);
-    transition: fill 250ms linear;
 }
 
 .clients-icon_logo {
     fill:#AFB1B8;
+    transition: fill 250ms linear;    
 }
 
 .clients-item:not(:last-child) {
